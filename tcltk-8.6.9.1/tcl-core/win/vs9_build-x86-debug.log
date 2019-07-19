@@ -1,0 +1,317 @@
+%externals%\binaries\tcltk\tcl-core\win>vs9_build-x86-debug.bat
+
+%externals%\binaries\tcltk\tcl-core\win>setlocal
+
+%externals%\binaries\tcltk\tcl-core\win>if not exist "..\..\tcltk\bin\tcl86tg.dll" goto build
+
+%externals%\binaries\tcltk\tcl-core\win>nmake -f makefile.vc MACHINE=IX86 OPTS=symbols,msvcrt INSTALLDIR="..\..\tcltk" INSTALL_DIR="..\..\tcltk" DEBUGFLAGS="-wd4456 -wd4457 -wd4458 -wd4459 -wd4996" core shell dlls
+
+Microsoft (R) Program Maintenance Utility Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+*** Compiler does not have 'Pentium 0x0f fix'
+*** Doing msvcrt
+*** Doing symbols
+*** Intermediate directory will be '%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic'
+*** Output directory will be '%externals%\binaries\tcltk\tcl-core\win\Debug_VC9'
+*** Installation, if selected, will be in '..\..\tcltk'
+*** Suffix for binaries will be 'tg'
+*** Compiler version 9. Target IX86, host AMD64.
+*** Dependency rules are not being used.
+
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DBUILD_tcl -DTCL_ASCII_MAIN  -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclMain2.obj %externals%\binaries\tcltk\tcl-core\win\..\generic\tclMain.c
+tclMain.c
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DBUILD_tcl  -DCFG_INSTALL_LIBDIR="\"..\\..\\tcltk\\lib\""  -DCFG_INSTALL_BINDIR="\"..\\..\\tcltk\\bin\""  -DCFG_INSTALL_SCRDIR="\"..\\..\\tcltk\\lib\\tcl8.6\""  -DCFG_INSTALL_INCDIR="\"..\\..\\tcltk\\include\""  -DCFG_INSTALL_DOCDIR="\"..\\..\\tcltk\\doc\""   -DCFG_RUNTIME_LIBDIR="\"..\\..\\tcltk\\lib\""  -DCFG_RUNTIME_BINDIR="\"..\\..\\tcltk\\bin\""  -DCFG_RUNTIME_SCRDIR="\"..\\..\\tcltk\\lib\\tcl8.6\""  -DCFG_RUNTIME_INCDIR="\"..\\..\\tcltk\\include\""  -DCFG_RUNTIME_DOCDIR="\"..\\..\\tcltk\\doc\""      -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclPkgConfig.obj %externals%\binaries\tcltk\tcl-core\win\..\generic\tclPkgConfig.c
+tclPkgConfig.c
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DBUILD_tcl -I%externals%\binaries\tcltk\tcl-core\win\..\compat\zlib -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclZlib.obj %externals%\binaries\tcltk\tcl-core\win\..\generic\tclZlib.c
+tclZlib.c
+        rc -fo %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tcl.res -r -i "%externals%\binaries\tcltk\tcl-core\win\..\generic" -i "%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -DDEBUG=1 -d UNCHECKED=0  -DCOMMAVERSION=8,6,0  -DDOTVERSION=\"8.6\"  -DVERSION=\"86\"  -DSUFX=\"tg\"  -DPROJECT=\"tcl\"  -DPRJLIBNAME=\"tcl86tg.dll\" %externals%\binaries\tcltk\tcl-core\win\..\win\tcl.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.6723.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DBUILD_tcl -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ @C:\Temp\nm3193.tmp
+regcomp.c
+regerror.c
+regexec.c
+regfree.c
+tclAlloc.c
+tclAssembly.c
+tclAsync.c
+tclBasic.c
+tclBinary.c
+tclCkalloc.c
+tclClock.c
+tclCmdAH.c
+tclCmdIL.c
+tclCmdMZ.c
+tclCompCmds.c
+tclCompCmdsGR.c
+tclCompCmdsSZ.c
+tclCompExpr.c
+tclCompile.c
+tclConfig.c
+Generating Code...
+Compiling...
+tclDate.c
+tclDictObj.c
+tclDisassemble.c
+tclEncoding.c
+tclEnsemble.c
+tclEnv.c
+tclEvent.c
+tclExecute.c
+tclFCmd.c
+tclFileName.c
+tclGet.c
+tclHash.c
+tclHistory.c
+tclIndexObj.c
+tclInterp.c
+tclIO.c
+tclIOCmd.c
+tclIOGT.c
+tclIOSock.c
+tclIOUtil.c
+Generating Code...
+Compiling...
+tclIORChan.c
+tclIORTrans.c
+tclLink.c
+tclListObj.c
+tclLiteral.c
+tclLoad.c
+tclMain.c
+tclNamesp.c
+tclNotify.c
+tclOO.c
+tclOOBasic.c
+tclOOCall.c
+tclOODefineCmds.c
+tclOOInfo.c
+tclOOMethod.c
+tclOOStubInit.c
+tclObj.c
+tclOptimize.c
+tclPanic.c
+tclParse.c
+Generating Code...
+Compiling...
+tclPathObj.c
+tclPipe.c
+tclPkg.c
+tclPosixStr.c
+tclPreserve.c
+tclProc.c
+tclRegexp.c
+tclResolve.c
+tclResult.c
+tclScan.c
+tclStringObj.c
+tclStrToD.c
+tclStubInit.c
+tclThread.c
+tclThreadAlloc.c
+tclThreadJoin.c
+tclThreadStorage.c
+tclTimer.c
+tclTomMathInterface.c
+tclTrace.c
+Generating Code...
+Compiling...
+tclUtf.c
+tclUtil.c
+tclVar.c
+Generating Code...
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DBUILD_tcl -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ @C:\Temp\nm6BCE.tmp
+adler32.c
+compress.c
+crc32.c
+deflate.c
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+trees.c
+uncompr.c
+zutil.c
+Generating Code...
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DBUILD_tcl -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ @C:\Temp\nm6D95.tmp
+bncore.c
+bn_reverse.c
+bn_fast_s_mp_mul_digs.c
+bn_fast_s_mp_sqr.c
+bn_mp_add.c
+bn_mp_add_d.c
+bn_mp_and.c
+bn_mp_clamp.c
+bn_mp_clear.c
+bn_mp_clear_multi.c
+bn_mp_cmp.c
+bn_mp_cmp_d.c
+bn_mp_cmp_mag.c
+bn_mp_cnt_lsb.c
+bn_mp_copy.c
+bn_mp_count_bits.c
+bn_mp_div.c
+bn_mp_div_d.c
+bn_mp_div_2.c
+bn_mp_div_2d.c
+Generating Code...
+Compiling...
+bn_mp_div_3.c
+bn_mp_exch.c
+bn_mp_expt_d.c
+bn_mp_grow.c
+bn_mp_init.c
+bn_mp_init_copy.c
+bn_mp_init_multi.c
+bn_mp_init_set.c
+bn_mp_init_set_int.c
+bn_mp_init_size.c
+bn_mp_karatsuba_mul.c
+bn_mp_karatsuba_sqr.c
+bn_mp_lshd.c
+bn_mp_mod.c
+bn_mp_mod_2d.c
+bn_mp_mul.c
+bn_mp_mul_2.c
+bn_mp_mul_2d.c
+bn_mp_mul_d.c
+bn_mp_neg.c
+Generating Code...
+Compiling...
+bn_mp_or.c
+bn_mp_radix_size.c
+bn_mp_radix_smap.c
+bn_mp_read_radix.c
+bn_mp_rshd.c
+bn_mp_set.c
+bn_mp_set_int.c
+bn_mp_shrink.c
+bn_mp_sqr.c
+bn_mp_sqrt.c
+bn_mp_sub.c
+bn_mp_sub_d.c
+bn_mp_to_unsigned_bin.c
+bn_mp_to_unsigned_bin_n.c
+bn_mp_toom_mul.c
+bn_mp_toom_sqr.c
+bn_mp_toradix_n.c
+bn_mp_unsigned_bin_size.c
+bn_mp_xor.c
+bn_mp_zero.c
+Generating Code...
+Compiling...
+bn_s_mp_add.c
+bn_s_mp_mul_digs.c
+bn_s_mp_sqr.c
+bn_s_mp_sub.c
+Generating Code...
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DBUILD_tcl -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ @C:\Temp\nm9477.tmp
+tclWin32Dll.c
+tclWinChan.c
+tclWinConsole.c
+tclWinError.c
+tclWinFCmd.c
+tclWinFile.c
+tclWinInit.c
+tclWinLoad.c
+tclWinNotify.c
+tclWinPipe.c
+tclWinSerial.c
+tclWinSock.c
+tclWinThrd.c
+tclWinTime.c
+Generating Code...
+        link -nologo -machine:IX86  -ltcg -debug -debugtype:cv -dll -out:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl86tg.dll kernel32.lib advapi32.lib netapi32.lib user32.lib userenv.lib ws2_32.lib   @C:\Temp\nm9E3C.tmp
+   Creating library %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl86tg.lib and object %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl86tg.exp
+LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+        if exist %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl86tg.dll.manifest mt -nologo -manifest %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl86tg.dll.manifest -outputresource:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl86tg.dll;2
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -Zl -DSTATIC_BUILD -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath" -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclStubLib.obj %externals%\binaries\tcltk\tcl-core\win\..\generic\tclStubLib.c
+tclStubLib.c
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -Zl -DSTATIC_BUILD -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath" -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclTomMathStubLib.obj %externals%\binaries\tcltk\tcl-core\win\..\generic\tclTomMathStubLib.c
+tclTomMathStubLib.c
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -Zl -DSTATIC_BUILD -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath" -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclOOStubLib.obj %externals%\binaries\tcltk\tcl-core\win\..\generic\tclOOStubLib.c
+tclOOStubLib.c
+        lib -nologo  -ltcg -out:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclstub86.lib -nodefaultlib %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclStubLib.obj  %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclTomMathStubLib.obj  %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclOOStubLib.obj
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1   -DTCL_USE_STATIC_PACKAGES=0  -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclAppInit.obj %externals%\binaries\tcltk\tcl-core\win\..\win\tclAppInit.c
+tclAppInit.c
+        rc -fo %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclsh.res -r -i "%externals%\binaries\tcltk\tcl-core\win\..\generic" -i "%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -DDEBUG=1 -d UNCHECKED=0  -DCOMMAVERSION=8,6,0  -DDOTVERSION=\"8.6\"  -DVERSION=\"86\"  -DSUFX=\"tg\"  -DPROJECT=\"tcl\"  -DPRJLIBNAME=\"tcl86tg.dll\" %externals%\binaries\tcltk\tcl-core\win\..\win\tclsh.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.6723.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        link -nologo -machine:IX86  -ltcg -debug -debugtype:cv -subsystem:console -out:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclsh86tg.exe kernel32.lib advapi32.lib netapi32.lib user32.lib userenv.lib ws2_32.lib   -stack:2300000 %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclAppInit.obj %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclsh.res %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclstub86.lib %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl86tg.lib
+LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+        if exist %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclsh86tg.exe.manifest mt -nologo -manifest %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclsh86tg.exe.manifest -outputresource:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclsh86tg.exe;1
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1  -DUSE_TCL_STUBS -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclWinReg.obj %externals%\binaries\tcltk\tcl-core\win\..\win\tclWinReg.c
+tclWinReg.c
+        link -nologo -machine:IX86  -ltcg -debug -debugtype:cv -dll -out:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclreg13g.dll kernel32.lib advapi32.lib netapi32.lib user32.lib userenv.lib ws2_32.lib   %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclWinReg.obj %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclstub86.lib
+   Creating library %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclreg13g.lib and object %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclreg13g.exp
+LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+        if exist %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclreg13g.dll.manifest mt -nologo -manifest %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclreg13g.dll.manifest -outputresource:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclreg13g.dll;2
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -WX -Fp%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"%externals%\binaries\tcltk\tcl-core\win\..\win" -I"%externals%\binaries\tcltk\tcl-core\win\..\generic"  -I"%externals%\binaries\tcltk\tcl-core\win\..\libtommath"  -DTCL_TOMMATH -DMP_PREC=4 -Dinline=__inline -DHAVE_ZLIB=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1  -DUSE_TCL_STUBS -Fo%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclWinDde.obj %externals%\binaries\tcltk\tcl-core\win\..\win\tclWinDde.c
+tclWinDde.c
+        link -nologo -machine:IX86  -ltcg -debug -debugtype:cv -dll -out:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcldde14g.dll kernel32.lib advapi32.lib netapi32.lib user32.lib userenv.lib ws2_32.lib   %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic\tclWinDde.obj %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tclstub86.lib
+   Creating library %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcldde14g.lib and object %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcldde14g.exp
+LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+        if exist %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcldde14g.dll.manifest mt -nologo -manifest %externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcldde14g.dll.manifest -outputresource:%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcldde14g.dll;2
+
+%externals%\binaries\tcltk\tcl-core\win>nmake -f makefile.vc MACHINE=IX86 OPTS=symbols,msvcrt INSTALLDIR="..\..\tcltk" INSTALL_DIR="..\..\tcltk" DEBUGFLAGS="-wd4456 -wd4457 -wd4458 -wd4459 -wd4996" install-binaries install-libraries
+
+Microsoft (R) Program Maintenance Utility Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+*** Compiler does not have 'Pentium 0x0f fix'
+*** Doing msvcrt
+*** Doing symbols
+*** Intermediate directory will be '%externals%\binaries\tcltk\tcl-core\win\Debug_VC9\tcl_ThreadedDynamic'
+*** Output directory will be '%externals%\binaries\tcltk\tcl-core\win\Debug_VC9'
+*** Installation, if selected, will be in '..\..\tcltk'
+*** Suffix for binaries will be 'tg'
+*** Compiler version 9. Target IX86, host AMD64.
+*** Dependency rules are not being used.
+
+Installing to '..\..\tcltk'
+Installing tcl86tg.dll
+Installing tclsh86tg.exe
+Installing tclstub86.lib
+Creating tclConfig.sh
+Installing message catalogs
+    Creating msgs
+Installing time zone data
+    Creating tzdata
+        Creating Africa
+        Creating America
+            Creating Argentina
+            Creating Indiana
+            Creating Kentucky
+            Creating North_Dakota
+        Creating Antarctica
+        Creating Arctic
+        Creating Asia
+        Creating Atlantic
+        Creating Australia
+        Creating Brazil
+        Creating Canada
+        Creating Chile
+        Creating Etc
+        Creating Europe
+        Creating Indian
+        Creating Mexico
+        Creating Pacific
+        Creating SystemV
+        Creating US
+Installing header files
+Installing library files to ..\..\tcltk\lib\tcl8.6
+Installing library http1.0 directory
+Installing library opt0.4 directory
+Installing package http 2.9.0 as a Tcl Module
+Installing package msgcat 1.6.1 as a Tcl Module
+Installing package tcltest 2.4.1 as a Tcl Module
+Installing package platform 1.0.14 as a Tcl Module
+Installing package platform::shell 1.1.4 as a Tcl Module
+Installing tcldde14g.dll
+Installing tclreg13g.dll
+Installing encodings
+
+%externals%\binaries\tcltk\tcl-core\win>

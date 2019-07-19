@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="dll-ansi-debug|Win32">
+      <Configuration>dll-ansi-debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-ansi-debug|x64">
+      <Configuration>dll-ansi-debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-ansi-release|Win32">
+      <Configuration>dll-ansi-release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="dll-ansi-release|x64">
+      <Configuration>dll-ansi-release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-debug|Win32">
+      <Configuration>lib-ansi-debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-debug|x64">
+      <Configuration>lib-ansi-debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-release|Win32">
+      <Configuration>lib-ansi-release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="lib-ansi-release|x64">
+      <Configuration>lib-ansi-release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>liblzma</ProjectName>
+    <ProjectGuid>{8FD826F8-3739-44E6-8CC8-997122E53B8D}</ProjectGuid>
+    <RootNamespace>liblzma</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">$(SolutionDir)lib\dll-ansi-x86-debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">$(SolutionDir)lib\dll-ansi-x86-debug\VS2012\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">$(SolutionDir)lib\dll-ansi-x64-debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">$(SolutionDir)lib\dll-ansi-x64-debug\VS2012\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">$(SolutionDir)lib\dll-ansi-x86-release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">$(SolutionDir)lib\dll-ansi-x86-release\VS2012\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">$(SolutionDir)lib\dll-ansi-x64-release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">$(SolutionDir)lib\dll-ansi-x64-release\VS2012\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">$(SolutionDir)lib\lib-ansi-x86-debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">$(SolutionDir)lib\lib-ansi-x86-debug\VS2012\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">$(SolutionDir)lib\lib-ansi-x64-debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">$(SolutionDir)lib\lib-ansi-x64-debug\VS2012\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">$(SolutionDir)lib\lib-ansi-x86-release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">$(SolutionDir)lib\lib-ansi-x86-release\VS2012\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">$(SolutionDir)lib\lib-ansi-x64-release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">$(SolutionDir)lib\lib-ansi-x64-release\VS2012\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">$(ProjectName)d_vs2012</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">$(ProjectName)d_vs2012</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">$(ProjectName)_vs2012</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">$(ProjectName)_vs2012</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">$(ProjectName)d_vs2012</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">$(ProjectName)d_vs2012</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">$(ProjectName)_vs2012</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">$(ProjectName)_vs2012</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_DEBUG;_WINDOWS;_DLL;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>msvcrtd.lib;oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)liblzmad_vs2012.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>.\liblzma.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)liblzmad_vs2012.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)liblzmad_vs2012.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)liblzmad_vs2012.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WIN64;_DEBUG;_WINDOWS;_DLL;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>msvcrtd.lib;oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)liblzmad_vs2012.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>.\liblzma.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)liblzmad_vs2012.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)liblzmad_vs2012.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)liblzmad_vs2012.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;NDEBUG;_WINDOWS;_DLL;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>msvcrt.lib;oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)liblzma_vs2012.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>.\liblzma.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(OutDir)liblzma_vs2012.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)liblzma_vs2012.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)liblzma_vs2012.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WIN64;NDEBUG;_WINDOWS;_DLL;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>msvcrt.lib;oldnames.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)liblzma_vs2012.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>.\liblzma.def</ModuleDefinitionFile>
+      <ProgramDatabaseFile>$(OutDir)liblzma_vs2012.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)liblzma_vs2012.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)liblzma_vs2012.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_DEBUG;_WINDOWS;_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)liblzmad_vs2012.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WIN64;_DEBUG;_WINDOWS;_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)liblzmad_vs2012.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;NDEBUG;_WINDOWS;_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)liblzma_vs2012.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(IntDir)%(Filename).tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SDKDIR)stdlib\include\compat\c99;$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\liblzma\common;$(ProjectDir)..\src\c89\liblzma\check;$(ProjectDir)..\src\c89\liblzma\lz;$(ProjectDir)..\src\c89\liblzma\rangecoder;$(ProjectDir)..\src\c89\liblzma\lzma;$(ProjectDir)..\src\c89\liblzma\delta;$(ProjectDir)..\src\c89\liblzma\simple;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_WIN64;NDEBUG;_WINDOWS;_LIB;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;HAVE_CONFIG_H;TUKLIB_SYMBOL_PREFIX=lzma;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x040c</Culture>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir)..\src\liblzma\api;$(ProjectDir)..\src\c89\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)liblzma_vs2012.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\c89\common\tuklib_physmem.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\block_util.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\common.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\easy_preset.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\filter_common.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\hardware_physmem.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\index.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\stream_flags_common.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\vli_size.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\alone_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\block_buffer_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\block_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\block_header_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\easy_buffer_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\easy_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\easy_encoder_memusage.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\filter_buffer_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\filter_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\filter_flags_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\index_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\stream_buffer_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\stream_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\stream_flags_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\vli_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\alone_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\auto_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\block_buffer_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\block_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\block_header_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\easy_decoder_memusage.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\filter_buffer_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\filter_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\filter_flags_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\index_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\index_hash.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\stream_buffer_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\stream_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\stream_flags_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\common\vli_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\check\check.c" />
+    <ClCompile Include="..\src\c89\liblzma\check\crc32_small.c" />
+    <ClCompile Include="..\src\c89\liblzma\check\crc32_table.c" />
+    <ClCompile Include="..\src\c89\liblzma\check\crc32_fast.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\crc64_small.c" />
+    <ClCompile Include="..\src\c89\liblzma\check\crc64_table.c" />
+    <ClCompile Include="..\src\c89\liblzma\check\crc64_fast.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\sha256.c" />
+    <ClCompile Include="..\src\c89\liblzma\lz\lz_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\lz\lz_encoder_mf.c" />
+    <ClCompile Include="..\src\c89\liblzma\lz\lz_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder_optimum_fast.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder_optimum_normal.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder_presets.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\fastpos_table.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma2_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma2_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\rangecoder\price_table.c" />
+    <ClCompile Include="..\src\c89\liblzma\delta\delta_common.c" />
+    <ClCompile Include="..\src\c89\liblzma\delta\delta_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\delta\delta_decoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\arm.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\armthumb.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\ia64.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\powerpc.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\sparc.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\x86.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\simple_coder.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\simple_encoder.c" />
+    <ClCompile Include="..\src\c89\liblzma\simple\simple_decoder.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\c89\liblzma\common\index_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\stream_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\check\check.h" />
+    <ClInclude Include="..\src\c89\liblzma\check\crc_macros.h" />
+    <ClInclude Include="..\config.h" />
+    <ClInclude Include="..\src\c89\common\tuklib_physmem.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\common.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\easy_preset.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\filter_common.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\index.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\stream_flags_common.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\block_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\filter_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\alone_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\block_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\common\filter_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\check\crc32_table_be.h" />
+    <ClInclude Include="..\src\c89\liblzma\check\crc32_table_le.h" />
+    <ClInclude Include="..\src\c89\liblzma\check\crc64_table_be.h" />
+    <ClInclude Include="..\src\c89\liblzma\check\crc64_table_le.h" />
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_encoder_hash.h" />
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_encoder_hash_table.h" />
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_common.h" />
+    <ClInclude Include="..\src\c89\liblzma\lzma\fastpos.h" />
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_encoder_private.h" />
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma2_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma2_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\range_common.h" />
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\price.h" />
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\range_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\range_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_common.h" />
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_private.h" />
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_decoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_coder.h" />
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_private.h" />
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_encoder.h" />
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_decoder.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\base.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\bcj.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\block.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\check.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\container.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\delta.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\filter.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\hardware.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\index.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\index_hash.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\stream_flags.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\version.h" />
+    <ClInclude Include="..\src\liblzma\api\lzma\vli.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\src\c89\liblzma\check\crc32_x86.S">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\src\c89\liblzma\check\crc64_x86.S">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <None Include="liblzma.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\c89\liblzma\liblzma_w32res.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='dll-ansi-debug|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='dll-ansi-release|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='lib-ansi-debug|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='lib-ansi-release|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

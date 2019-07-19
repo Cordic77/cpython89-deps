@@ -1,0 +1,38 @@
+; ISO/IEC 9899:1999 compatibility library
+;LIBRARY c99compat
+
+EXPORTS
+  vsprintf=c99_vsprintf
+  vsnprintf=c99_vsnprintf
+  vswprintf=c99_vswprintf
+  vsnwprintf=c99_vsnwprintf
+
+  sprintf=c99_sprintf
+  snprintf=c99_snprintf
+  swprintf=c99_swprintf
+  snwprintf=c99_snwprintf
+
+  vfprintf=c99_vfprintf
+  vfwprintf=c99_vfwprintf
+  vprintf=c99_vprintf
+  vwprintf=c99_vwprintf
+
+  fprintf=c99_fprintf
+  fwprintf=c99_fwprintf
+  printf=c99_printf
+  wprintf=c99_wprintf
+
+  vsscanf=c99_vsscanf
+  vswscanf=c99_vswscanf
+  sscanf=c99_sscanf
+  swscanf=c99_swscanf
+
+  vfscanf=c99_vfscanf
+  vfwscanf=c99_vfwscanf
+  vscanf=c99_vscanf
+  vwscanf=c99_vwscanf
+
+  fscanf=c99_fscanf
+  fwscanf=c99_fwscanf
+  scanf=c99_scanf
+  wscanf=c99_wscanf

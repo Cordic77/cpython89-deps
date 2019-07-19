@@ -1,0 +1,42 @@
+cd openssl-1.1.x
+
+(1) Configure:
+    dll-debug-x86:      perl Configure debug-VC-WIN32 [shared]
+    dll-release-x86:    perl Configure VC-WIN32 [shared]
+    dll-debug-x64:      perl Configure debug-VC-WIN64A [shared]
+    dll-release-x64:    perl Configure VC-WIN64A [shared]
+
+    lib-debug-x86:      perl Configure debug-VC-WIN32 no-shared
+    lib-release-x86:    perl Configure VC-WIN32 no-shared
+    lib-debug-x64:      perl Configure debug-VC-WIN64A no-shared
+    lib-release-x64:    perl Configure VC-WIN64A no-shared
+
+    E.g.:
+
+Linux - gcc:  ./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl no-shared enable-asm enable-weak-ssl-ciphers enable-deprecated enable-md2 enable-rc5 enable-ssl3 enable-ssl3-method enable-ec_nistp_64_gcc_128
+                                       [enable-zlib-dynamic] [enable-tls1_3 (unnecessary)] [enable-tls13downgrade (dis-default)]
+
+Win64 - vc:   perl Configure VC-WIN64A no-shared enable-asm enable-weak-ssl-ciphers enable-deprecated enable-md2 enable-rc5 enable-ssl3 enable-ssl3-method
+                                       [enable-tls1_3 (unnecessary)] [enable-tls13downgrade (dis-default)]
+
+(2-pre) Modifications for VS9 compatibility:
+
+vpw crypto/rand/rand_win.c
+
+/* On Windows Vista or higher use BCrypt instead of the legacy CryptoAPI */
+# if defined(_MSC_VER) && defined(_WIN32_WINNT) && _WIN32_WINNT >= 0x0600
+
+==>
+
+# if defined(_MSC_VER) && defined(_WIN32_WINNT) && _WIN32_WINNT >= 0x0600 && _MSC_VER >= 1600 /* VS2010 (or higher)? */
+#  define USE_BCRYPTGENRANDOM
+# endif
+
+(2) Make:
+    nmake
+
+(3) Tests:
+    nmake test
+
+(4) Install:
+    nmake install

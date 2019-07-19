@@ -1,0 +1,25 @@
+cd openssl-1.0.x
+
+(1) Configure:
+    debug-x86:          perl Configure debug-VC-WIN32 [no-asm]
+    release-x86:        perl Configure VC-WIN32 [no-asm]
+    debug-x64:          perl Configure debug-VC-WIN64A [no-asm]
+    release-x64:        perl Configure VC-WIN64A [no-asm]
+
+(2) Assembler:
+    x86:                ms\do_nasm
+    x64:                ms\do_win64a
+
+(3) Make:
+    dll:                nmake -f ms\ntdll.mak
+    lib:                nmake -f ms\nt.mak
+
+(4) Tests:
+    dll-x86:            nmake -f ms\ntdll.mak test
+    lib-x86:            nmake -f ms\nt.mak test
+
+    lib-x64:            (pushd out32.dbg 2>nul || pushd out32) & ..\ms\test & popd
+
+(5) Install [opt]:
+    dll:                nmake -f ms\ntdll.mak install
+    lib:                nmake -f ms\nt.mak install

@@ -1,0 +1,236 @@
+%externals%\binaries\tcltk\tk\win>vs9_build-x86-debug.bat
+
+%externals%\binaries\tcltk\tk\win>setlocal
+
+%externals%\binaries\tcltk\tk\win>if not exist "..\..\tcltk\bin\tk86tg.dll" goto build
+
+%externals%\binaries\tcltk\tk\win>nmake /nologo -f makefile.vc RC=rc MACHINE=IX86 OPTS=symbols,msvcrt TCLDIR="..\..\tcl-core-8.6.9" INSTALLDIR="..\..\tcltk" DEBUGFLAGS="-wd4456 -wd4457 -wd4458 -wd4459 -wd4996" all
+*** Using ..\..\tcl-core-8.6.9\win\rules.vc
+*** Compiler does not have 'Pentium 0x0f fix'
+*** Doing msvcrt
+*** Doing symbols
+*** Building against Tcl at '..\..\tcl-core-8.6.9'
+*** Intermediate directory will be 'd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic'
+*** Output directory will be 'd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9'
+*** Installation, if selected, will be in '..\..\tcltk'
+*** Suffix for binaries will be 'tg'
+*** Compiler version 9. Target IX86, host AMD64.
+*** Dependency rules are not being used.
+
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -Zl -DSTATIC_BUILD -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib" -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\tkStubLib.obj d:\SDK\C\Linux\TclTk\tk\win\..\generic\tkStubLib.c
+tkStubLib.c
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -DUSE_TCL_STUBS -DUSE_TCLOO_STUBS  -DBUILD_tk -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ @C:\Temp\nm6CC4.tmp
+ttkStubLib.c
+        lib -nologo  -ltcg -out:d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tkstub86.lib -nodefaultlib d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\tkStubLib.obj d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ttkStubLib.obj
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1  -DTCL_USE_STATIC_PACKAGES=0  -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\winMain.obj d:\SDK\C\Linux\TclTk\tk\win\..\win\winMain.c
+winMain.c
+        rc -fo d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\wish.res -r -i "d:\SDK\C\Linux\TclTk\tk\win\..\generic" -i "d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic"  -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win"  -DDEBUG=1 -d UNCHECKED=0  -DCOMMAVERSION=8,6,0  -DDOTVERSION=\"8.6\"  -DVERSION=\"86\"  -DSUFX=\"tg\"  -DPROJECT=\"tk\"  -DPRJLIBNAME=\"tk86tg.dll\" d:\SDK\C\Linux\TclTk\tk\win\..\win\rc\wish.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.6723.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -DUSE_TCL_STUBS -DUSE_TCLOO_STUBS  -DBUILD_tk -DTK_ASCII_MAIN -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\tkMain2.obj d:\SDK\C\Linux\TclTk\tk\win\..\generic\tkMain.c
+tkMain.c
+        rc -fo d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\tk.res -r -i "d:\SDK\C\Linux\TclTk\tk\win\..\generic" -i "d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic"  -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win"  -DDEBUG=1 -d UNCHECKED=0  -DCOMMAVERSION=8,6,0  -DDOTVERSION=\"8.6\"  -DVERSION=\"86\"  -DSUFX=\"tg\"  -DPROJECT=\"tk\"  -DPRJLIBNAME=\"tk86tg.dll\" d:\SDK\C\Linux\TclTk\tk\win\..\win\rc\tk.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.6723.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -DUSE_TCL_STUBS -DUSE_TCLOO_STUBS  -DBUILD_tk -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ @C:\Temp\nm7012.tmp
+tkConsole.c
+tk3d.c
+tkArgv.c
+tkAtom.c
+tkBind.c
+tkBitmap.c
+tkBusy.c
+tkButton.c
+tkCanvArc.c
+tkCanvBmap.c
+tkCanvImg.c
+tkCanvLine.c
+tkCanvPoly.c
+tkCanvPs.c
+tkCanvText.c
+tkCanvUtil.c
+tkCanvWind.c
+tkCanvas.c
+tkClipboard.c
+tkCmds.c
+Generating Code...
+Compiling...
+tkColor.c
+tkConfig.c
+tkCursor.c
+tkEntry.c
+tkError.c
+tkEvent.c
+tkFileFilter.c
+tkFocus.c
+tkFont.c
+tkFrame.c
+tkGC.c
+tkGeometry.c
+tkGet.c
+tkGrab.c
+tkGrid.c
+tkImage.c
+tkImgBmap.c
+tkImgGIF.c
+tkImgPNG.c
+tkImgPPM.c
+Generating Code...
+Compiling...
+tkImgPhoto.c
+tkImgPhInstance.c
+tkImgUtil.c
+tkListbox.c
+tkMacWinMenu.c
+tkMain.c
+tkMenu.c
+tkMenubutton.c
+tkMenuDraw.c
+tkMessage.c
+tkPanedWindow.c
+tkObj.c
+tkOldConfig.c
+tkOption.c
+tkPack.c
+tkPlace.c
+tkPointer.c
+tkRectOval.c
+tkScale.c
+tkScrollbar.c
+Generating Code...
+Compiling...
+tkSelect.c
+tkStyle.c
+tkText.c
+tkTextBTree.c
+tkTextDisp.c
+tkTextImage.c
+tkTextIndex.c
+tkTextMark.c
+tkTextTag.c
+tkTextWind.c
+tkTrig.c
+tkUndo.c
+tkUtil.c
+tkVisual.c
+tkStubInit.c
+tkWindow.c
+Generating Code...
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -DUSE_TCL_STUBS -DUSE_TCLOO_STUBS  -DBUILD_tk -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ @C:\Temp\nm9260.tmp
+tkUnixMenubu.c
+tkUnixScale.c
+Generating Code...
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -DUSE_TCL_STUBS -DUSE_TCLOO_STUBS  -DBUILD_tk -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ @C:\Temp\nm937A.tmp
+xcolors.c
+xdraw.c
+xgc.c
+ximage.c
+xutil.c
+Generating Code...
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -DUSE_TCL_STUBS -DUSE_TCLOO_STUBS  -DBUILD_tk -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ @C:\Temp\nm9540.tmp
+tkWin3d.c
+tkWin32Dll.c
+tkWinButton.c
+tkWinClipboard.c
+tkWinColor.c
+tkWinConfig.c
+tkWinCursor.c
+tkWinDialog.c
+tkWinDraw.c
+tkWinEmbed.c
+tkWinFont.c
+tkWinImage.c
+tkWinInit.c
+tkWinKey.c
+tkWinMenu.c
+tkWinPixmap.c
+tkWinPointer.c
+tkWinRegion.c
+tkWinScrlbr.c
+tkWinSend.c
+Generating Code...
+Compiling...
+tkWinSendCom.c
+tkWinWindow.c
+tkWinWm.c
+tkWinX.c
+stubs.c
+ttkWinMonitor.c
+ttkWinTheme.c
+ttkWinXPTheme.c
+TmSchema.h is obsolete. Please include vssym32.h instead.
+Generating Code...
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -I"..\..\tcl-core-8.6.9\generic" -I"..\..\tcl-core-8.6.9\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\win" -I"d:\SDK\C\Linux\TclTk\tk\win\..\generic" -I"d:\SDK\C\Linux\TclTk\tk\win\..\bitmaps" -I"d:\SDK\C\Linux\TclTk\tk\win\..\xlib"  -DBUILD_ttk -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1  -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1  -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1  -DSUPPORT_CONFIG_EMBEDDED  -DHAVE_UXTHEME_H=1 -Dinline=__inline -D _CRT_SECURE_NO_DEPRECATE -D _CRT_NONSTDC_NO_DEPRECATE -DTCL_CFGVAL_ENCODING=\"cp1252\" -DSTDC_HEADERS -DTCL_THREADS=1 -DUSE_THREAD_ALLOC=1 -DUSE_TCL_STUBS -DUSE_TCLOO_STUBS  -DBUILD_tk -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ @C:\Temp\nmA84C.tmp
+ttkBlink.c
+ttkButton.c
+ttkCache.c
+ttkClamTheme.c
+ttkClassicTheme.c
+ttkDefaultTheme.c
+ttkElements.c
+ttkEntry.c
+ttkFrame.c
+ttkImage.c
+ttkInit.c
+ttkLabel.c
+ttkLayout.c
+ttkManager.c
+ttkNotebook.c
+ttkPanedwindow.c
+ttkProgress.c
+ttkScale.c
+ttkScrollbar.c
+ttkScroll.c
+Generating Code...
+Compiling...
+ttkSeparator.c
+ttkSquare.c
+ttkState.c
+ttkTagSet.c
+ttkTheme.c
+ttkTrace.c
+ttkTrack.c
+ttkTreeview.c
+ttkWidget.c
+ttkStubInit.c
+Generating Code...
+        link -nologo -machine:IX86  -ltcg -debug -debugtype:cv -dll -out:d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk86tg.dll kernel32.lib advapi32.lib netapi32.lib gdi32.lib user32.lib userenv.lib "..\..\tcl-core-8.6.9\win\Debug_VC9\tclstub86.lib" "..\..\tcl-core-8.6.9\win\Debug_VC9\tcl86tg.lib"  @C:\Temp\nmB0BA.tmp
+   Creating library d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk86tg.lib and object d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk86tg.exp
+LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+tclstub86.lib(tclStubLib.obj) : warning LNK4099: PDB 'vc90.pdb' was not found with '..\..\tcl-core-8.6.9\win\Debug_VC9\tclstub86.lib' or at 'd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\vc90.pdb'; linking object as if no debug info
+        if exist d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk86tg.dll.manifest mt -nologo -manifest d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk86tg.dll.manifest -outputresource:d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk86tg.dll;2
+        link -nologo -machine:IX86  -ltcg -debug -debugtype:cv -subsystem:windows -out:d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\wish86tg.exe kernel32.lib advapi32.lib netapi32.lib gdi32.lib user32.lib userenv.lib "..\..\tcl-core-8.6.9\win\Debug_VC9\tclstub86.lib" "..\..\tcl-core-8.6.9\win\Debug_VC9\tcl86tg.lib"  -stack:2300000 d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\winMain.obj d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\wish.res d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tkstub86.lib d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk86tg.lib
+LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+        if exist d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\wish86tg.exe.manifest mt -nologo -manifest d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\wish86tg.exe.manifest -outputresource:d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\wish86tg.exe;1
+        cl -nologo -c /D_ATL_XP_TARGETING /DUNICODE /D_UNICODE  -W3 -Fpd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ -Zi -Od -wd4456 -wd4457 -wd4458 -wd4459 -wd4996 -MDd -D_CRT_NONSTDC_NO_DEPRECATE -DCONSOLE -Fod:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\ ..\..\tcl-core-8.6.9\win\cat.c
+cat.c
+        link -nologo -machine:IX86  -ltcg -debug -debugtype:cv -subsystem:console -out:"d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\cat32.exe" kernel32.lib advapi32.lib netapi32.lib gdi32.lib user32.lib userenv.lib "..\..\tcl-core-8.6.9\win\Debug_VC9\tclstub86.lib" "..\..\tcl-core-8.6.9\win\Debug_VC9\tcl86tg.lib"  -DCONSOLE -stack:16384 d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic\cat.obj
+LINK : warning LNK4044: unrecognized option '/DCONSOLE'; ignored
+LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+        if exist "d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\cat32.exe".manifest mt -nologo -manifest "d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\cat32.exe".manifest -outputresource:"d:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\cat32.exe";1
+
+%externals%\binaries\tcltk\tk\win>nmake /nologo -f makefile.vc RC=rc MACHINE=IX86 OPTS=symbols,msvcrt TCLDIR="..\..\tcl-core-8.6.9" INSTALLDIR="..\..\tcltk" DEBUGFLAGS="-wd4456 -wd4457 -wd4458 -wd4459 -wd4996" install-binaries install-libraries
+*** Using ..\..\tcl-core-8.6.9\win\rules.vc
+*** Compiler does not have 'Pentium 0x0f fix'
+*** Doing msvcrt
+*** Doing symbols
+*** Building against Tcl at '..\..\tcl-core-8.6.9'
+*** Intermediate directory will be 'd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9\tk_ThreadedDynamic'
+*** Output directory will be 'd:\SDK\C\Linux\TclTk\tk\win\Debug_VC9'
+*** Installation, if selected, will be in '..\..\tcltk'
+*** Suffix for binaries will be 'tg'
+*** Compiler version 9. Target IX86, host AMD64.
+*** Dependency rules are not being used.
+
+installing binaries
+creating package index
+installing Tk headers
+installing script library
+installing theme library
+installing images
+installing language files
+installing demos
+
+%externals%\binaries\tcltk\tk\win>

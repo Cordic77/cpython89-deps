@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47206786-0ce3-44ba-81ea-9d90f9cf6ae3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src_common">
+      <UniqueIdentifier>{187a3c4b-10fa-4590-bf79-bd1dbf856f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{3f91264a-075a-43d6-80ed-4e79ef273d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\append_1">
+      <UniqueIdentifier>{f1fdd9b4-6bc6-4b73-a9a6-2f9effc55ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\append_2">
+      <UniqueIdentifier>{0e22e9bc-73e1-42c7-9cc0-8b0fbab8a553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check">
+      <UniqueIdentifier>{a1cae449-0e32-44b7-8f3c-bf4f193f01b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_3">
+      <UniqueIdentifier>{9fc4d435-91f1-4b9f-a7d8-c775bce8488f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_4">
+      <UniqueIdentifier>{383d0f36-0a02-4ffd-aa71-cd988be55f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_5 %28asm%29">
+      <UniqueIdentifier>{856a7670-2f07-4b40-ad6a-07c5143f2031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_6">
+      <UniqueIdentifier>{00f3d97b-64c4-45b3-a4d9-b887d41cd02c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_7">
+      <UniqueIdentifier>{c859d351-135a-4243-ae36-c75e38b1aee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_8">
+      <UniqueIdentifier>{d3bba279-a792-43d5-9db1-a0fd8b4b4d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_9 %28asm%29">
+      <UniqueIdentifier>{ce601563-68c8-410e-a74f-36c139dccda5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_10">
+      <UniqueIdentifier>{a54f3cfb-df42-40b0-9116-3bfaa87cd988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\check\append_11">
+      <UniqueIdentifier>{cb2c9a11-5a3a-4dba-b8df-e872082852f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lz">
+      <UniqueIdentifier>{f5f967a7-5b26-4790-a2aa-ac318c42433d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lz\append_12">
+      <UniqueIdentifier>{8008825a-8ca5-4dc4-86b0-bb28a0804a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lz\append_13">
+      <UniqueIdentifier>{ad16962a-10eb-49a9-bd88-bd4674dbc318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lzma">
+      <UniqueIdentifier>{302c5bd5-826b-4409-bb1b-8fbdce261f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lzma\append_16">
+      <UniqueIdentifier>{c4ba2e9b-0932-4b6c-a7bf-51edf821f848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lzma\append_17">
+      <UniqueIdentifier>{573515d0-aa83-42b4-bc94-76fa449f3f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lzma\append_18">
+      <UniqueIdentifier>{28b58f1b-8f72-4297-b528-43e807017f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lzma\append_19">
+      <UniqueIdentifier>{3927a7a9-8339-49c1-bd78-59b87d836172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lzma\append_20">
+      <UniqueIdentifier>{379d4065-1992-4e33-8481-e7245f96f4a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rangecoder">
+      <UniqueIdentifier>{092e93d5-e947-4e0e-b53f-5fc34cb94307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rangecoder\append_22">
+      <UniqueIdentifier>{d321d28c-d5f7-470d-a0b1-e813c71539f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\delta">
+      <UniqueIdentifier>{698a8bd8-1c52-4e03-ac22-70b690062fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\delta\append_24">
+      <UniqueIdentifier>{def5fe17-5597-46ce-a4cd-2404e4947018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\delta\append_25">
+      <UniqueIdentifier>{12f0c753-e03a-4399-8569-2cb2617f3bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\delta\append_26">
+      <UniqueIdentifier>{1a4f95c9-dd36-4977-9449-0f993eaeb758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple">
+      <UniqueIdentifier>{b27c721f-ae08-47b1-bb22-44e5a94ee5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple\append_27">
+      <UniqueIdentifier>{b7716da8-68b2-4771-936f-d685441403da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple\append_28">
+      <UniqueIdentifier>{a7a4979d-d876-4467-bfa6-addee41f093d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\simple\append_29">
+      <UniqueIdentifier>{c5c72d4e-de94-4b1b-9078-c4bc3987ac3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4ad419e8-a02e-427b-8c36-ecfac67e01e1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\src_common">
+      <UniqueIdentifier>{21117156-0cf8-48ea-8346-562e9d2542c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{77143461-fe01-4102-8ae1-81784f0fe147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\append_1">
+      <UniqueIdentifier>{a0838fc0-23ed-4f19-828a-2d1571f78dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\append_2">
+      <UniqueIdentifier>{27cbeb92-91ee-4109-81ae-0d91098f129d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\check">
+      <UniqueIdentifier>{b962b514-867d-4428-aacd-e219e53b8a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\check\append_4">
+      <UniqueIdentifier>{60a11ac0-d696-4e48-a6ba-3a03bbae8aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\check\append_8">
+      <UniqueIdentifier>{3c670be4-0bcf-4b83-8bc6-2d67f6a10cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lz">
+      <UniqueIdentifier>{3b9e60b6-8969-48c2-9928-b32f1bf2dada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lz\append_12">
+      <UniqueIdentifier>{ca530abc-b446-4c59-8057-3a2e1bc6915c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lz\append_13">
+      <UniqueIdentifier>{6e35a73b-7867-4173-8f6b-c082f787819e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lzma">
+      <UniqueIdentifier>{4e83bdf2-27cf-4924-b1ad-2d3480c52150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lzma\append_15">
+      <UniqueIdentifier>{4d51e0d7-5fde-40a0-9ed8-dbefdb1b6350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lzma\append_16">
+      <UniqueIdentifier>{9f09c360-2d7e-4262-bfb9-69a54e3c41a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lzma\append_18">
+      <UniqueIdentifier>{48944a67-8012-4f7e-8000-ad99949b19d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lzma\append_19">
+      <UniqueIdentifier>{a1594afd-d0ee-4049-b55b-0d7812372b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lzma\append_20">
+      <UniqueIdentifier>{63636b22-2e27-4dad-b7cf-6de15b8b5fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rangecoder">
+      <UniqueIdentifier>{4fbb5d2a-58a6-4d59-9c1d-e7b7fa03fa73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rangecoder\append_21">
+      <UniqueIdentifier>{859f1033-f291-4393-8663-1badc86f22a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rangecoder\append_22">
+      <UniqueIdentifier>{01879b44-d018-4ef1-84ca-0d58c63c2984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rangecoder\append_23">
+      <UniqueIdentifier>{e73a9653-f209-477c-bb11-43212ab5b1f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\delta">
+      <UniqueIdentifier>{1df7a786-6cd1-40b0-ae14-73516494f701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\delta\append_24">
+      <UniqueIdentifier>{b2d83b7c-81d0-49f7-a2f3-f722ecedb5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\delta\append_25">
+      <UniqueIdentifier>{4a44623d-bd99-4706-98ef-890fc0712a46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\delta\append_26">
+      <UniqueIdentifier>{b31691e6-29f8-4748-8463-53ede3ff0498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple">
+      <UniqueIdentifier>{3d893481-499c-4735-be3d-25cb5913c18d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple\append_27">
+      <UniqueIdentifier>{39385aaa-236a-43a9-b246-c90419543d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple\append_28">
+      <UniqueIdentifier>{c378ce00-549c-4e5e-9595-1cea23afeacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\simple\append_29">
+      <UniqueIdentifier>{828de561-ead9-4ae3-a519-292e7f42b04a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\api">
+      <UniqueIdentifier>{3c1135a6-d5a7-429c-858f-9607c82c13b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\api\lzma">
+      <UniqueIdentifier>{870ca649-934b-45ea-9fe3-e6b1478b7a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9faaca55-3474-4ca9-9bda-d74fd8f05943}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\c89\common\tuklib_physmem.c">
+      <Filter>Source Files\src_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\block_util.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\common.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\easy_preset.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\filter_common.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\hardware_physmem.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\index.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\stream_flags_common.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\vli_size.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\alone_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\block_buffer_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\block_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\block_header_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\easy_buffer_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\easy_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\easy_encoder_memusage.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\filter_buffer_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\filter_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\filter_flags_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\index_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\stream_buffer_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\stream_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\stream_flags_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\vli_encoder.c">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\alone_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\auto_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\block_buffer_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\block_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\block_header_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\easy_decoder_memusage.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\filter_buffer_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\filter_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\filter_flags_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\index_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\index_hash.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\stream_buffer_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\stream_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\stream_flags_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\common\vli_decoder.c">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\check.c">
+      <Filter>Source Files\check</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\crc32_small.c">
+      <Filter>Source Files\check\append_3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\crc32_table.c">
+      <Filter>Source Files\check\append_4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\crc32_fast.c">
+      <Filter>Source Files\check\append_6</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\crc64_small.c">
+      <Filter>Source Files\check\append_7</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\crc64_table.c">
+      <Filter>Source Files\check\append_8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\crc64_fast.c">
+      <Filter>Source Files\check\append_10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\check\sha256.c">
+      <Filter>Source Files\check\append_11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lz\lz_encoder.c">
+      <Filter>Source Files\lz\append_12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lz\lz_encoder_mf.c">
+      <Filter>Source Files\lz\append_12</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lz\lz_decoder.c">
+      <Filter>Source Files\lz\append_13</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder.c">
+      <Filter>Source Files\lzma\append_16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder_optimum_fast.c">
+      <Filter>Source Files\lzma\append_16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder_optimum_normal.c">
+      <Filter>Source Files\lzma\append_16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_encoder_presets.c">
+      <Filter>Source Files\lzma\append_16</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\fastpos_table.c">
+      <Filter>Source Files\lzma\append_17</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma_decoder.c">
+      <Filter>Source Files\lzma\append_18</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma2_encoder.c">
+      <Filter>Source Files\lzma\append_19</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\lzma\lzma2_decoder.c">
+      <Filter>Source Files\lzma\append_20</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\rangecoder\price_table.c">
+      <Filter>Source Files\rangecoder\append_22</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\delta\delta_common.c">
+      <Filter>Source Files\delta\append_24</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\delta\delta_encoder.c">
+      <Filter>Source Files\delta\append_25</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\delta\delta_decoder.c">
+      <Filter>Source Files\delta\append_26</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\arm.c">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\armthumb.c">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\ia64.c">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\powerpc.c">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\sparc.c">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\x86.c">
+      <Filter>Source Files\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\simple_coder.c">
+      <Filter>Source Files\simple\append_27</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\simple_encoder.c">
+      <Filter>Source Files\simple\append_28</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\c89\liblzma\simple\simple_decoder.c">
+      <Filter>Source Files\simple\append_29</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\c89\liblzma\common\index_encoder.h">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\stream_encoder.h">
+      <Filter>Source Files\common\append_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\stream_decoder.h">
+      <Filter>Source Files\common\append_2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\check\check.h">
+      <Filter>Source Files\check</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\check\crc_macros.h">
+      <Filter>Source Files\check</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\common\tuklib_physmem.h">
+      <Filter>Header Files\src_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\common.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\easy_preset.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\filter_common.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\index.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\stream_flags_common.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\block_encoder.h">
+      <Filter>Header Files\common\append_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\filter_encoder.h">
+      <Filter>Header Files\common\append_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\alone_decoder.h">
+      <Filter>Header Files\common\append_2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\block_decoder.h">
+      <Filter>Header Files\common\append_2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\common\filter_decoder.h">
+      <Filter>Header Files\common\append_2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\check\crc32_table_be.h">
+      <Filter>Header Files\check\append_4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\check\crc32_table_le.h">
+      <Filter>Header Files\check\append_4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\check\crc64_table_be.h">
+      <Filter>Header Files\check\append_8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\check\crc64_table_le.h">
+      <Filter>Header Files\check\append_8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_encoder.h">
+      <Filter>Header Files\lz\append_12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_encoder_hash.h">
+      <Filter>Header Files\lz\append_12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_encoder_hash_table.h">
+      <Filter>Header Files\lz\append_12</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lz\lz_decoder.h">
+      <Filter>Header Files\lz\append_13</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_common.h">
+      <Filter>Header Files\lzma\append_15</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lzma\fastpos.h">
+      <Filter>Header Files\lzma\append_16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_encoder.h">
+      <Filter>Header Files\lzma\append_16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_encoder_private.h">
+      <Filter>Header Files\lzma\append_16</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma_decoder.h">
+      <Filter>Header Files\lzma\append_18</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma2_encoder.h">
+      <Filter>Header Files\lzma\append_19</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\lzma\lzma2_decoder.h">
+      <Filter>Header Files\lzma\append_20</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\range_common.h">
+      <Filter>Header Files\rangecoder\append_21</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\price.h">
+      <Filter>Header Files\rangecoder\append_22</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\range_encoder.h">
+      <Filter>Header Files\rangecoder\append_22</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\rangecoder\range_decoder.h">
+      <Filter>Header Files\rangecoder\append_23</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_common.h">
+      <Filter>Header Files\delta\append_24</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_private.h">
+      <Filter>Header Files\delta\append_24</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_encoder.h">
+      <Filter>Header Files\delta\append_25</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\delta\delta_decoder.h">
+      <Filter>Header Files\delta\append_26</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_coder.h">
+      <Filter>Header Files\simple\append_27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_private.h">
+      <Filter>Header Files\simple\append_27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_encoder.h">
+      <Filter>Header Files\simple\append_28</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\c89\liblzma\simple\simple_decoder.h">
+      <Filter>Header Files\simple\append_29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma.h">
+      <Filter>Header Files\api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\base.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\bcj.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\block.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\check.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\container.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\delta.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\filter.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\hardware.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\index.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\index_hash.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\stream_flags.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\version.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\liblzma\api\lzma\vli.h">
+      <Filter>Header Files\api\lzma</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="liblzma.def">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\c89\liblzma\liblzma_w32res.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\src\c89\liblzma\check\crc32_x86.S">
+      <Filter>Source Files\check\append_5 %28asm%29</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\src\c89\liblzma\check\crc64_x86.S">
+      <Filter>Source Files\check\append_9 %28asm%29</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>
